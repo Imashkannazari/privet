@@ -1,0 +1,9 @@
+<h1>project list</h1>
+<hr>
+<ul>
+    {% for projects in project %}
+    <li>
+        <a href="{% url 'card:card_detail' projects.id %}">{{ projects.title }} - {{ projects.programmer_name }}</a>
+    </li>
+    {% endfor %}
+</ul>
