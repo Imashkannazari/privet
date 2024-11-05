@@ -1,0 +1,9 @@
+<h1>programmer list</h1>
+<hr>
+<ul>
+    {% for programmers in programmer %}
+    <li>
+        <a>{{ programmers.name }}  {{ programmers.last_name }}</a>
+    </li>
+    {% endfor %}
+</ul>
