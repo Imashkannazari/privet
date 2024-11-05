@@ -12,3 +12,5 @@ def detail(request, slug):
 def programmers(request):
     programmer = Programmers.objects.all()
     return render(request, 'programmers list.html', {"programmer":programmer})
+def home(request):
+    return render(request, 'index.html')
